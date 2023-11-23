@@ -1,0 +1,113 @@
+.wrapper {
+    position: fixed;
+
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+.emoji-wrap {
+    position: relative;
+    display: block;
+
+}
+
+
+
+.emoji {
+    /* display: block; */
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background-color: rgb(255, 213, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    /* animation: bounce 1s infinite */
+}
+
+.emoji {}
+
+@keyframes bounce {
+    from {
+        transform: translateY(20px);
+
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+
+}
+
+.emoji-eye-left {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    top: 100px;
+    left: 120px;
+}
+
+
+.l-r {
+    animation: shift 3.5s ease-in-out infinite;
+
+
+
+}
+
+@keyframes shift {
+    from {
+        transform: translateX(20px);
+        /* height: 10px; */
+
+    }
+
+    to {
+        transform: translateX(-20px);
+        /* height: 10px; */
+    }
+}
+
+.emoji-eye-right {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    top: 100px;
+    left: 200px;
+}
+
+.emoji-eye-nose {
+    position: absolute;
+    height: 60px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    top: 170px;
+    left: 165px;
+}
+
+.emoji-eye-mouth {
+    position: absolute;
+    height: 10px;
+    width: 110px;
+    background-color: black;
+    border-radius: 50%;
+    top: 250px;
+    left: 120px;
+    animation: opens 3.5s ease-in-out infinite;
+}
+
+@keyframes opens {
+    from {
+        height: 8px;
+    }
+
+    to {
+        height: 50px;
+    }
+}

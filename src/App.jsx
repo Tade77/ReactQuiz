@@ -1,20 +1,13 @@
 import { useState } from "react";
 
 import "./App.css";
+import Quiz from "./Quiz";
+import { jsQuiz } from "./data/QuestionsData";
 
 function App() {
   return (
-    <div className="wrapper">
-      <h1>Emoji Animation</h1>
-      <div className="emoji-wrap">
-        <p className="emoji"></p>
-        <div className="l-r">
-          <p className="emoji-eye-left"></p>
-          <p className="emoji-eye-right"></p>
-        </div>
-        <p className="emoji-eye-nose"></p>
-        <p className="emoji-eye-mouth"></p>
-      </div>
+    <div>
+      <Quiz questions={jsQuiz.questions} />
     </div>
   );
 }
