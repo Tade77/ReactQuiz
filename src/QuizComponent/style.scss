@@ -14,7 +14,55 @@ $bg-foreground: #2d264b;
 
   .active-question-no {
     font-size: 32px;
-    font-weight: 500px;
+    font-weight: 500;
     color: $primary;
+  }
+  .totalQuestion {
+    font-size: 16px;
+    font-weight: 500;
+    color: $disabled;
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .choices-list {
+    margin-top: 20px;
+    margin-left: -40px;
+    // list-style: none;
+    li {
+      text-decoration: none;
+      list-style: none;
+      font-size: 16px;
+      color: $bg-foreground;
+      background: $bg;
+      border: 1px solid $disabled;
+      border-radius: 16px;
+      padding: 8px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    .selected-answer {
+      background: $primary;
+      border: 1px solid $accent;
+      color: $bg;
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .btn {
+    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: $bg;
+    cursor: pointer;
+    &:disabled {
+      background: $bg-accent;
+      color: $disabled;
+      cursor: not-allowed;
+    }
   }
 }
