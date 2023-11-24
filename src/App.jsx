@@ -1,7 +1,6 @@
 import { useState } from "react";
-
 import "./App.css";
-import Quiz from "./Quiz";
+import Quiz from "./QuizComponent/Quiz";
 import { jsQuiz } from "./data/QuestionsData";
 
 function App() {
